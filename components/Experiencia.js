@@ -1,12 +1,19 @@
 import { View, Text, StyleSheet } from 'react-native';
+import TituloSecao from './TituloSecao';
 
 export default function Experiencia({ cargo, empresa, periodo, descricao }) {
     return (
-        <View style={styles.card}>
-            <Text style={styles.cargo}>{cargo}</Text>
-            <Text style={styles.empresa}>{empresa}</Text>
-            <Text style={styles.periodo}>{periodo}</Text>
-            <Text style={styles.descricao}>{descricao}</Text>
+        <View>
+            <TituloSecao
+                tituloSecao="Experiência"
+            />
+
+            <View style={styles.card}>
+                <Text style={styles.cargo}>{cargo}</Text>
+                <Text style={styles.empresa}>{empresa}</Text>
+                <Text style={styles.periodo}>{periodo}</Text>
+                <Text style={styles.descricao}>{descricao}</Text>
+            </View>
         </View>
     );
 }
@@ -14,15 +21,14 @@ export default function Experiencia({ cargo, empresa, periodo, descricao }) {
 const styles = StyleSheet.create({
     card: {
         backgroundColor: '#fff',
-        borderRadius: 12,
+        borderRadius: 8,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
         padding: 16,
         marginBottom: 12,
-        width: '90%',
-        elevation: 2,
-        shadowCOlor: '#000',
-        shadowOpacity: 0.1,
-        shadowOffset: {width: 0, height: 2},
-        shadowRadius: 4,
     },
     cargo: {
         fontSize: 18,
