@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
-import { FontAwesome5 } from '@expo/vector-icons';
-import Experiencia from './components/Experiencia';
-import Perfil from './components/Perfil';
-import TituloSecao from './components/TituloSecao';
-import Lista from './components/Lista';
-import Topico from './components/Topico';
+import { StyleSheet, Text, View, ScrollView, Image } from "react-native";
+import { FontAwesome5 } from "@expo/vector-icons";
+import Experiencia from "./components/Experiencia";
+import Perfil from "./components/Perfil";
+import TituloSecao from "./components/TituloSecao";
+import Lista from "./components/Lista";
+import Topico from "./components/Topico";
 
 export default function App() {
   return (
@@ -18,8 +18,8 @@ export default function App() {
           number="+55 (81) 98342-2096"
         />
 
-        <TituloSecao tituloSecao="Habilidades Técnicas"/>
-        <View style={{ flexDirection: 'row', marginTop: 10, gap: 15 }}>
+        <TituloSecao tituloSecao="Habilidades Técnicas" />
+        <View style={{ flexDirection: "row", marginTop: 10, gap: 15 }}>
           <FontAwesome5 name="react" size={40} color="#69a7eeff" />
           <FontAwesome5 name="docker" size={40} color="#4898f3ff" />
           <FontAwesome5 name="python" size={40} color="#ffce2cff" />
@@ -28,35 +28,27 @@ export default function App() {
         </View>
 
         <View>
-          <TituloSecao
-            tituloSecao="Objetivo"
-          />
-          <Topico
-            descricao="Estagiar como Desenvolvedor Full-Stack"
-          />
+          <TituloSecao tituloSecao="Objetivo" />
+          <Topico descricao="Estagiar como Desenvolvedor Full-Stack" />
         </View>
 
         <View>
-          <TituloSecao
-            tituloSecao="Resumo Profissional"
-          />
-          <Topico
-            descricao="Estudante de  Desenvolvimento de Sistemas com experiência prática como estagiário full-stack na Flagr, atuando com desenvolvimento de aplicações utilizando React, Docker, n8n Cloud e Python. Na Flagr, participo da automação do Data Room e da integração de sistemas utilizando ferramentas de código aberto. Lidero também a startup CriticLevel, aplicando habilidades de desenvolvimento, gestão de empreendedorismo. Tenho perfil proativo, colaborativo e focado em resultados, com facilidade para aprender novas tecnologias e trabalhar em equipes ágeis."
-          />
+          <TituloSecao tituloSecao="Resumo Profissional" />
+          <Topico descricao="Estudante de Desenvolvimento de Sistemas com experiência prática como estagiário full-stack na Flagr, atuando com desenvolvimento de aplicações utilizando React, Docker, n8n Cloud e Python. Na Flagr, participo da automação do Data Room e da integração de sistemas utilizando ferramentas de código aberto. Lidero também a startup CriticLevel, aplicando habilidades de desenvolvimento, gestão de empreendedorismo. Tenho perfil proativo, colaborativo e focado em resultados, com facilidade para aprender novas tecnologias e trabalhar em equipes ágeis." />
         </View>
 
-        <TituloSecao tituloSecao="Formação Acadêmica"/>
+        <TituloSecao tituloSecao="Formação Acadêmica" />
         <Lista
           listItem={[
-            'Tecnólogo em Análise e Desenvolvimento de Sistemas – Faculdade Senac Pernambuco (2025–2026)',
-            'Técnico em Desenvolvimento de Sistemas – Mediotec Senac (2022–2024)',
+            "Tecnólogo em Análise e Desenvolvimento de Sistemas – Faculdade Senac Pernambuco (2025–2026)",
+            "Técnico em Desenvolvimento de Sistemas – Mediotec Senac (2022–2024)",
           ]}
         />
 
-        <TituloSecao tituloSecao="Idioma"/>
+        <TituloSecao tituloSecao="Idioma" />
         <Lista
           listItem={[
-            'Inglês Intermediário (capaz de compreender textos e conversas, identificando contexto e sentido geral).',
+            "Inglês Intermediário (capaz de compreender textos e conversas, identificando contexto e sentido geral).",
           ]}
         />
 
@@ -74,8 +66,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f4f4f4',
-    justifyContent: 'center',
+    backgroundColor: "#f4f4f4",
+    justifyContent: "center",
     padding: 16,
   },
 });
